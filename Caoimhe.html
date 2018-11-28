@@ -18,6 +18,10 @@
         font-size: 80px;
     }
 
+    .custommargin {
+      margin-bottom:10px;
+      margin-top:10px;
+    }
 
 /* Slideshow container */
 .slideshow-container {
@@ -150,80 +154,81 @@ li a:hover {
   </head>
 
   <body>
-    <h6>Wonderlust Blog</h6>
-<nav>
-  <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#">Tips & Advice</a></li>
-    <li><a href="#">Destinations</a></li>
-  </ul>
-</nav>
-<div id='wrapper'>
-      <!-- Slideshow container -->
-  <div class="slideshow-container">
+    <h6 class="custommargin">Wanderlust Blog</h6>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/ImgParis.jpg" style="width:100%">
-      <div class="text">Paris</div>
-    </div>
+    <nav>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Tips & Advice</a></li>
+        <li><a href="#">Destinations</a></li>
+      </ul>
+    </nav>
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/ImgDublin.jpg" style="width:100%">
-      <div class="text">Dublin</div>
-    </div>
+    <div id='wrapper'>
+          <!-- Slideshow container -->
+      <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="images/ImgLondon.jpg" style="width:100%">
-      <div class="text">London</div>
-    </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/ImgParis.jpg" style="width:100%">
+          <div class="text">Paris</div>
+        </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="images/ImgDubai.jpg" style="width:100%">
-      <div class="text">Dubai</div>
-    </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/ImgDublin.jpg" style="width:100%">
+          <div class="text">Dublin</div>
+        </div>
 
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/ImgLondon.jpg" style="width:100%">
+          <div class="text">London</div>
+        </div>
 
-  <!-- About section -->
-      <div id='about'>
-        <h3>About</h3>
-        <p>
-      Worried about travelling around the world as a solo female? Fear not!
-        </p>
-        <p>
-          Solo Female Traveler is a travel guide specifically designed for women who want to travel. We share our tips, advice and adventurers as female travellers
-          </p>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/ImgDubai.jpg" style="width:100%">
+          <div class="text">Dubai</div>
+        </div>
+
       </div>
-  <!-- End of about -->
-</div>
 
-<script>
-  var slideIndex = 0;
-  showSlides();
+      <!-- About section -->
+          <div id='about'>
+            <h3>About</h3>
+            <p>
+          Worried about travelling around the world as a solo female? Fear not!
+            </p>
+            <p>
+              Solo Female Traveler is a travel guide specifically designed for women who want to travel. We share our tips, advice and adventurers as female travellers
+              </p>
+          </div>
+      <!-- End of about -->
+    </div>
 
-  function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
-  }
-</script>
+    </script>
 
-<footer>
+    <footer>
 
 
 
-</footer>
+    </footer>
   </body>
-
 </html>
