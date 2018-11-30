@@ -5,13 +5,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-    <title>Destinations</title>
+    <title>Destionations</title>
 <style>
 
   body{
     background-color: #EEE;
   }
-
 
 
   /* Hide the images by default */
@@ -50,7 +49,7 @@
 
   #dest{
     margin-left: 400px;
-    height: 300px;
+    height: 250px;
     width: 350px;
     padding-left: 100px;
     padding-right: 100px;
@@ -61,6 +60,18 @@
     bottom: 0,25px;
     text-align: center;
 
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   #dest h3{
@@ -93,10 +104,6 @@
       background-color: #111;
   }
 
-
-
-
-
   }
 
   </style>
@@ -105,20 +112,30 @@
   <nav>
     <ul>
       <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#">Tips & Advice</a></li>
-      <li><a href="#">Blog</a></li>
     </ul>
   </nav>
   </div>
   <!-- About section -->
       <div id='dest'>
-        <h3>Destinations</h3>
+        <h3>Destionations</h3>
         <p>
-      Check out the most polular destinations
+      Top three destinations of the month
         </p>
       </div>
   <!-- End of about -->
+
+  <div class="row">
+    <div class="column">
+      <img src="images/Paris.jpg" alt="Paris" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/London.jpg" alt="London" style="width:100%">
+    </div>
+  </div>
+
+
 
 
 
