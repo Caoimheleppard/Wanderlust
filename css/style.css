@@ -3,16 +3,6 @@ html
   scroll-behavior: smooth;
 }
 
-h3
-{
-  color: #009699;
-}
-
-label
-{
-  color: #009699;
-}
-
 
 /*----------------------------------------------------------------------------*/
 
@@ -22,7 +12,6 @@ label
 {
   border: 3px dotted #00b2b5;
   border-radius: 5px;
-  margin: -10px;
 }
 
 #chat-main h3
@@ -58,12 +47,18 @@ label
 {
   margin-left: 90px;
   color: #ff99cc;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
 }
 
 #chatbox p
 {
   padding-top: 10px;
   margin-left: 90px;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
 }
 
 .time-right
@@ -75,9 +70,17 @@ label
 
 #login
 {
-  float: right;
+  float: left;
   margin: 10px;
   margin-top: 0;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+#login:hover
+{
+  opacity: 1;
+  cursor: pointer;
 }
 
 
@@ -103,6 +106,16 @@ label
 {
   background-color: #ff99cc;
   border: 0;
+  opacity: 0.75;
+  transition: 0.3s;
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+#trigger:hover
+{
+  opacity: 1;
+  cursor: pointer;
 }
 
 .modal
@@ -130,6 +143,17 @@ label
   padding: 10px;
 }
 
+
+.modal-content h3
+{
+  color: #009699;
+}
+
+label
+{
+  color: #009699;
+}
+
 textarea
 {
   resize: none;
@@ -141,6 +165,14 @@ textarea
   float: right;
   background-color: #ff99cc;
   border: 0;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+#Submit:hover
+{
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* Modal (close button) */
@@ -158,6 +190,70 @@ textarea
 .close:focus
 {
   color: red;
+  cursor: pointer;
+}
+
+/* Adds Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+#twitter
+{
+  background: #00acee;
+  color: white;
+  margin-top: 50px;
+  opacity: 0.75;
+  transition: 0.3s;
+  border: 0;
+}
+
+#twitter:hover
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+#facebook
+{
+  background: #4868ac;
+  color: white;
+  margin-top: 50px;
+  opacity: 0.75;
+  transition: 0.3s;
+  border: 0;
+}
+
+#facebook:hover
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+#pinterest
+{
+  background: #b62f26;
+  color: white;
+  margin-top: 50px;
+  opacity: 0.75;
+  transition: 0.3s;
+  border: 0;
+}
+
+#pinterest:hover
+{
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -186,6 +282,7 @@ textarea
 #Top:hover
 {
   background-color: #ff99cc;
+  cursor: pointer;
 }
 
 #scroll_arrow
