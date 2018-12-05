@@ -12,6 +12,7 @@ html
 #search-btn
 {
   background-color: #00b2b5;
+  color: white;
   border: 0;
   opacity: 0.75;
   transition: 0.3s;
@@ -150,7 +151,7 @@ html
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
-  padding-top: 60px;
+  Padding-top: 10px;
 }
 
 /* Modal (content/box) */
@@ -161,12 +162,16 @@ html
   border: 1px solid #888;
   width: 67%;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
 .modal-content h3
 {
   color: #009699;
+  text-align: center;
+  width: inherit;
 }
 
 label
